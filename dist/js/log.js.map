@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/log.js"],"names":["log","message","$","append"],"mappings":"AAAA,SAASA,GAAT,CAAaC,OAAb,EAAqB;AACjBC,EAAAA,CAAC,CAAC,MAAD,CAAD,CAAUC,MAAV,WAAyBF,OAAzB;AACH","sourcesContent":["function log(message){\r\n    $('#log').append(`<div>${message}</div>`);\r\n}"],"file":"log.js"}
