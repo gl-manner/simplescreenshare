@@ -2,7 +2,7 @@ var port = 433;
 var host_url = `192.168.0.101`;
 
 var default_auth_email = "pingkee317@gmail.com";
-var default_auth_password = "pingkeepassword317";
+var default_auth_password = "";
 
 module.exports = {
   port: 433,
