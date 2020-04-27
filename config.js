@@ -1,5 +1,5 @@
 var port = 433;
-var host_url = `192.168.0.101`;
+var host_url = `3.101.75.94`;
 
 var default_auth_email = "pingkee317@gmail.com";
 var default_auth_password = "";

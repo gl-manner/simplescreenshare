@@ -119,7 +119,7 @@
     console.info(`Connecting ${caller}...`);
 
     // Connect to signaling server
-    socket = io("http://192.168.0.101:433");
+    socket = io("http://3.101.75.94:433");
 
     // We tell the server who we are
     sendToServer({
