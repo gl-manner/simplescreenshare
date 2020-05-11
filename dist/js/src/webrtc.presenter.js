@@ -85,12 +85,13 @@
         return;
       }
       //1680, 1050
+      console.log("count:dffffffff", count);
       const mediaConstraints = {
         audio: true,
         video: {
           width: 1600,
           height: 900,
-          deviceId: realV[count - 1].deviceId,
+          deviceId: realV[0].deviceId,
         },
       };
       const mediaStream = await navigator.mediaDevices.getUserMedia(
@@ -119,7 +120,7 @@
     console.info(`Connecting ${caller}...`);
 
     // Connect to signaling server
-    socket = io("http://3.101.75.94:433");
+    socket = io("https://172.31.11.79:443");
 
     // We tell the server who we are
     sendToServer({

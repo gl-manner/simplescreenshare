@@ -9,7 +9,10 @@ var config = require("./config");
 var privateKey = fs.readFileSync("./certsFiles/selfsigned.key").toString();
 var certificate = fs.readFileSync("./certsFiles/selfsigned.crt").toString();
 
-const server = require("http").createServer(app);
+const server = require("https").createServer(
+  { key: privateKey, cert: certificate },
+  app
+);
 const io = require("socket.io")(server);
 
 app.use(express.static("./public"));

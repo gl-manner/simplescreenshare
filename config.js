@@ -1,12 +1,12 @@
-var port = 433;
-var host_url = `3.101.75.94`;
+var port = 443;
+var host_url = `172.31.11.79`;
 
 var default_auth_email = "pingkee317@gmail.com";
 var default_auth_password = "";
 
 module.exports = {
-  port: 433,
-  web_url: `http://${host_url}:${port}`,
+  port: 443,
+  web_url: `https://${host_url}:${port}`,
   socket_url: host_url,
   STORAGE_PATH: "./public/storage",
   email: {
