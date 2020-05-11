@@ -120,7 +120,9 @@
     console.info(`Connecting ${caller}...`);
 
     // Connect to signaling server
-    socket = io("https://172.31.11.79:443");
+    socket = io(
+      "https://ec2-54-176-212-246.us-west-1.compute.amazonaws.com:443"
+    );
 
     // We tell the server who we are
     sendToServer({

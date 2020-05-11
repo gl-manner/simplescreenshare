@@ -1,5 +1,5 @@
 var port = 443;
-var host_url = `172.31.11.79`;
+var host_url = `ec2-54-176-212-246.us-west-1.compute.amazonaws.com`;
 
 var default_auth_email = "pingkee317@gmail.com";
 var default_auth_password = "";
